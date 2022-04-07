@@ -2,7 +2,7 @@
 #include <unistd.h>
 
 /**
- * main - starting 
+ * main - starting
  *
  * Return: one
  */

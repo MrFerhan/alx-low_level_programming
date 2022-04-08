@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
- *
  * main - start
  *
- * Return: Always 0 
+ * Return: Always 0
  *
  */
 

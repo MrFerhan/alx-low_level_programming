@@ -3,8 +3,9 @@
 /**
  * main - Write a program that prints _putchar, followed by a new line
  *
- * return: always sucess
+ * Return: always sucess
  */
+
 int main(void)
 {
 	_putchar('_');
@@ -17,6 +18,6 @@ int main(void)
 	_putchar('r');
 	_putchar('\n');
 
-	return(0);
+	return (0);
 
 }

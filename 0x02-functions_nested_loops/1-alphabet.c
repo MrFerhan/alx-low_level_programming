@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet - Write a program that prints _putchar, followed by a new line
+ * print_alphabet - print a to z using putchar
  *
  * Return: always sucess
  */
@@ -12,7 +12,7 @@ void print_alphabet(void)
 
 	for (x = 'a'; x <= 'z'; x++)
 	{
-		_putchar('x');
+		_putchar(x);
 		x++;
 	}
 	_putchar('\n');

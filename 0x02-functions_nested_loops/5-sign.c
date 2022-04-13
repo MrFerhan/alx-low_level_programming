@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _print_sign - check lower case
+ * print_sign - check lower case
  *
  * @n: the int  to check
  * Return: 0 ro 1
@@ -11,7 +11,7 @@ int print_sign(int n)
 {
 int ret;
 
-	if (n > 0 )
+	if (n > 0)
 	{
 		ret = 1;
 		_putchar('+');

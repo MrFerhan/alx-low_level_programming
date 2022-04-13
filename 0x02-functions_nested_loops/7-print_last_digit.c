@@ -16,10 +16,6 @@ int _abs(int r)
 	if (r < 0)
 	{
 		x = x * -1;
-		return (x);
 	}
-	else
-	{
 		return (x);
-	}
 }

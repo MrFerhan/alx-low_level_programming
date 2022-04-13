@@ -7,10 +7,8 @@
  * Return: the value
  */
 
-int _abs(int)
+int _abs(int r)
 {
-	int r;
-
 	if (r > 0)
 	{
 		return (r);
@@ -18,5 +16,9 @@ int _abs(int)
 	else if (r < 0)
 	{
 		return (-r);
+	}
+	else 
+	{
+		return (r);
 	}
 }

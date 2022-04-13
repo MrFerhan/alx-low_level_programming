@@ -3,7 +3,7 @@
 /**
  * _abs - return absolute value
  *
- * @n: the int to be checked
+ * @r: the int to be checked
  * Return: the value
  */
 
@@ -17,7 +17,7 @@ int _abs(int r)
 	{
 		return (-r);
 	}
-	else 
+	else
 	{
 		return (r);
 	}

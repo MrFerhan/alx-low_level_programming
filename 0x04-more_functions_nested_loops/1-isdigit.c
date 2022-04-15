@@ -1,9 +1,8 @@
 #include "main.h"
-
 /**
  * _isdigit - chek digit
  * @c: var to be checked
- * Return: 1  0
+ * Return: return 1  0
  */
 
 int _isdigit(int c)
@@ -13,5 +12,7 @@ int _isdigit(int c)
 		return (0);
 	}
 	else
+	{
 		return (1);
+	}
 }

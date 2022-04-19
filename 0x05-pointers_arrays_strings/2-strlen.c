@@ -13,5 +13,8 @@ int _strlen(char *s)
 	int i = 0;
 
 	for (LOF = 0; s[LOF] != '\0'; LOF++)
-	return (LOF);
+	{
+		i++;
+	}
+	return (i);
 }

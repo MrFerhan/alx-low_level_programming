@@ -6,7 +6,7 @@
  * @s: int var to be checked for tis length
  */
 
-void print_rev(char *s);
+void print_rev(char *s)
 {
 	int i = 0;
 

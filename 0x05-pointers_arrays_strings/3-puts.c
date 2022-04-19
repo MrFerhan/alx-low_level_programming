@@ -3,8 +3,7 @@
 /**
  * _puts - main function to swqp
  *
- * @s: int var to be checked for tis length
- * Return: return 0
+ * @str: int var to be checked for tis length
  */
 
 void _puts(char *str)

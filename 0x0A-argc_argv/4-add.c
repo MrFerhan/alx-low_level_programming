@@ -25,7 +25,6 @@ int main(int argc, char *argv[])
 			if (argv[i][j] >= '0' && argv[i][j] <= '9')
 			{
 			sum += atoi(argv[i]);
-			printf("%d\n", sum);
 			}
 			else
 			{
@@ -35,5 +34,6 @@ int main(int argc, char *argv[])
 			}
 		}
 	}
+	printf("%d\n", sum);
 	return (0);
 }

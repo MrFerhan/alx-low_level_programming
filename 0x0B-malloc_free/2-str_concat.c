@@ -3,7 +3,7 @@
 /**
  * str_concat - brings to strings togther
  * @s1: string 1
- * @st: string 2
+ * @s2: string 2
  *
  * Return: null or a pointer to nw_arr
  */
@@ -31,7 +31,7 @@ char *str_concat(char *s1, char *s2)
 	for (k = 0; k < i; k++)
 		nw_arr[k] = s1[k];
 	limit = j;
-	for (j =0; j <= limit; k++, j++)
+	for (j = 0; j <= limit; k++, j++)
 		nw_arr[k] = s2[j];
 
 	return (nw_arr);

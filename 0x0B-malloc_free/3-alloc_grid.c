@@ -8,10 +8,11 @@
  * Return: null or a pointer to _grd
  */
 
-char *str_concat(char *s1, char *s2)
+
+int **alloc_grid(int width, int height)
 {
-	char **grd;
-	unsigned int i, j;
+	char **_grd;
+	int i, j;
 
 	if (width < 1 || height < 1)
 		return (NULL);

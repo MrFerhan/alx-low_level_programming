@@ -17,7 +17,7 @@ int _strlen(char *str)
 	return (i);
 }
 /**
- * malloc_checked - concatenates two strto newly allocated memory
+ * string_nconcat - concatenates two strto newly allocated memory
  * @s1: string 1
  * @s2: string 2
  * @n: first bytes to take from string 2
@@ -37,9 +37,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 	if (m < 0)
 		return (NULL);
-	if (m >= _strlen(s2))
+	if (m >=  _strlen(s2))
 		m = _strlen(s2);
-	length =_strlen(s1) + m + 1;
+	length = _strlen(s1) + m + 1;
 	ptr = malloc(sizeof(*ptr) * length);
 	if (ptr == NULL)
 		return (NULL);
@@ -47,6 +47,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		ptr[i] = s1[i];
 	for (j = 0; j < m; j++)
 		ptr[i + j] = s2[j];
-	ptr [i + j] = '\0';
+	ptr[i + j] = '\0';
 	return (ptr);
 }

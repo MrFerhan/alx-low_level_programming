@@ -3,7 +3,7 @@
 
 /**
  * _calloc - allocat memmory of an anrry using malloc
- * @str: num of elemntd in the array
+ * @nmemb: num of elemntd in the array
  * @size: size of array
  *
  * Return: poinr to memory or NULL

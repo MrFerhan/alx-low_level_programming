@@ -2,6 +2,21 @@
 #include <stdlib.h>
 
 /**
+ * _strlen - stingth lenght
+ * @str: string
+ *
+ * Return: string lenght
+ */
+
+int _strlen(char *str)
+{
+	int i;
+
+	for (i = 0; str[i] != '\0'; i++)
+		;
+	return (i);
+}
+/**
  * malloc_checked - concatenates two strto newly allocated memory
  * @s1: string 1
  * @s2: string 2
@@ -22,13 +37,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 	if (m < 0)
 		return (NULL);
-	for (i = 0; i <= m && s2[i] != '\0'; i++)
-		return (i);
-	for (j = 0; s1[j] != '\0'; j++)
-		return (j);
-	length = i + j + 1;
+	if (m >= _strlen(s2))
+		m = _strlen(s2);
+	length =_strlen(s1) + m + 1;
 	ptr = malloc(sizeof(*ptr) * length);
-	ptr[j] = s1[j];
-	ptr[i + j] = s2[i];
+	if (ptr == NULL)
+		return (NULL);
+	for (i = 0; s1[i] != '\0'; i++)
+		ptr[j] = s1[j];
+	for (j = 0; j < m; j++)
+		ptr[i + j] = s2[i];
+	ptr [i + j] = '\0';
 	return (ptr);
 }

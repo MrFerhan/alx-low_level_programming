@@ -34,6 +34,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (nw_dog->owner == NULL)
 	{
 		free(nw_dog);
+		free(nw_dog->name);
 		return (NULL);
 	}
 	_memcpy(nw_dog->owner, owner, olen);

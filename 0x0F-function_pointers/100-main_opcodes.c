@@ -27,8 +27,8 @@ int main (int argc, char **argv)
 	for (i = 0; i <(byte - 1); i++)
 	{
 		if (byte != 0)
-			printf("%x", ((char *)main)[i]);
+			printf("%02hhx", ((char *)main)[i]);
 	}
-	printf("%x", ((char *)main)[i]);
+	printf("%02hhx", ((char *)main)[i]);
 	return (0);
 }

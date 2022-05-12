@@ -24,7 +24,6 @@ int op_mul(int a, int b)
 	return (a * b);
 }
 
-    
 /**
  * op_sub - sum
  * @a: int 1

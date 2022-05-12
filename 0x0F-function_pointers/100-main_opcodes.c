@@ -9,7 +9,7 @@
  * Return: Error or result
  */
 
-int main (int argc, char **argv)
+int main(int argc, char **argv)
 {
 	int i, byte;
 
@@ -24,7 +24,7 @@ int main (int argc, char **argv)
 		printf("Error\n");
 		return (2);
 	}
-	for (i = 0; i <(byte - 1); i++)
+	for (i = 0; i < (byte - 1); i++)
 	{
 		if (byte != 0)
 			printf("%02hhx ", ((char *)main)[i]);

@@ -1,5 +1,4 @@
 #include "3-calc.h"
-
 /**
  * main - checks and gives reuslt
  * @argc: no of arg
@@ -8,7 +7,7 @@
  * Return: error or result
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	int a = 0, b = 0, res = 0;
 	char s;

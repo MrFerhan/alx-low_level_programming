@@ -20,7 +20,11 @@ if (new_node == NULL)
 return (NULL);
 
 new_node->str = strdup(str);
-
+if (new_node-> == NULL)
+{
+	free(new_node);
+	return (NULL);
+}
 while (new_node->str[i])
 {
 i++;

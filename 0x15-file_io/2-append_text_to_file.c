@@ -18,7 +18,6 @@ int _strlen(char *s)
 	}
 	return (i);
 }
-
 /**
 * append_text_to_file - appends text at the end of a file.
 * @filename: file to append.
